@@ -1,0 +1,46 @@
+{
+  "id": "E111",
+  "value": 6.024667394036591e-20,
+  "value_70_digits": "6.024667394036591229315698043602202989202154087558092232182789486917674e-20",
+  "method": "Independent Python Decimal (90 working digits, 70-digit report); direct analytical formulas, Decimal square roots/exponentials and argument-reduced Taylor sine. SI decimal spellings are used except explicitly marked exact-binary64 regression fixtures. No JavaScript imports.",
+  "cases": [
+    {
+      "name": "Half the box width quadruples the ground energy",
+      "values": {
+        "width": 5e-10
+      },
+      "expected": 2.4098669576146366e-19,
+      "expected_70_digits": "2.409866957614636491726279217440881195680861635023236892873115794767070e-19"
+    },
+    {
+      "name": "Third quantum level has nine times the ground energy",
+      "values": {
+        "level": 3
+      },
+      "expected": 5.422200654632932e-19,
+      "expected_70_digits": "5.422200654632932106384128239241982690281938678802283008964510538225907e-19"
+    },
+    {
+      "name": "Doubling the width quarters the energy",
+      "values": {
+        "width": 2e-09
+      },
+      "expected": 1.5061668485091478e-20,
+      "expected_70_digits": "1.506166848509147807328924510900550747300538521889523058045697371729419e-20"
+    },
+    {
+      "name": "Relativistic confinement is outside this model",
+      "values": {
+        "width": 1e-13
+      },
+      "throws": true
+    },
+    {
+      "name": "Zero is not an infinite-well quantum number",
+      "values": {
+        "level": 0
+      },
+      "throws": true
+    }
+  ]
+}
